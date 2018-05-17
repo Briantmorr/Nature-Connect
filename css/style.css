@@ -456,17 +456,10 @@ button.disabled{
     position: relative;
 }
 
-.winMsg {
+div.winMsg {
     display: none;
-    height: 10%;
-    width: 100%;
-    /* margin: 0 auto; */
-    position: absolute;
-    /* right: -28%; */
-    top: 0%;
-    z-index: 50;
-    border: 2px solid black;
-    background-color: rgb(81, 126, 166);
+    width:100%;
+    height:unset;
 }
 
 #tokenActive {
@@ -480,9 +473,6 @@ button.disabled{
 }
 
 .winBox{
-    height: 13%;
-    width: 80%;
-    margin: auto;
     font-size: 1.8rem;
     text-align: center;
     text-shadow: 1px 1px 0 black;
