@@ -49,6 +49,7 @@ function processResetClick(value){
     if(value === 'yes'){
         board.resetBoard();
         $(".winMsg").css('display', 'none');
+        $('.tokenHoverContainer').css({width: '84%'});
     }
 }
 
@@ -102,15 +103,17 @@ function resultScreen(result) {
             if (activePlayer.playerNumber === 1) {
                 player1.gameWon++;
                 if(!(player1.gameWon > seriesLength/2.0)){
-                    winBox = $("<div>").addClass('winBox').text(player1.name + ' won the game!');
-                    $(".winMsg").css('display', 'block');
+                    winBox = $("<div>").addClass('winBox').text(player1.name + ' won the game!').css({
+                        color:'red',
+                    });
+                    $(".winMsg").css('display', 'flex');
                 } else {
                     winBox = $("<div>").addClass('winBox');
                     setTimeout(function(){
                         $('.winMsg .winBox').text(player1.name + ' won the match!').css({
                             color:'red',
                         });
-                        $(".winMsg").css('display', 'block');
+                        $(".winMsg").css('display', 'flex');
                         setupGame.buttonChange();
                     },1);
                 }
@@ -120,22 +123,24 @@ function resultScreen(result) {
             else if (activePlayer.playerNumber === 2) {
                 player2.gameWon++;
                 if(!(player2.gameWon > seriesLength/2.0)){
-                    winBox = $("<div>").addClass('winBox').text(player2.name + ' won the game!');
-                    $(".winMsg").css('display', 'block');
+                    winBox = $("<div>").addClass('winBox').text(player2.name + ' won the game!').css({
+                        color:'red',
+                    });
+                    $(".winMsg").css('display', 'flex');
                 } else {
                     winBox = $("<div>").addClass('winBox');
                     setTimeout(function(){
                         $('.winMsg .winBox').text(player2.name + ' won the match!').css({
                             color:'red',
                         });
-                        $(".winMsg").css('display', 'block');
+                        $(".winMsg").css('display', 'flex');
                         setupGame.buttonChange();
                     },1);
                 }
                 $('.playerDisplay2').text(player2.gameWon);
             }
 
-        
+        $('.tokenHoverContainer').css({width: '100%'});
         $('.winMsg').append(winBox);
     }
 }
