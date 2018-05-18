@@ -19,7 +19,6 @@ button:hover {
     box-shadow: 0px 0px 25px rgb(212, 237, 216);
 }
 body {
-    /* width: 100vw; */
     height: 100vh;
     background-image: url("../assets/scenery-pictures-3.jpg");
     background-size: cover;
@@ -31,9 +30,7 @@ h1{
 }
 
 .landingPage {
-    /*width: 100vmin;*/
     height: 100vh;
-    /*margin: 0 auto;*/
     min-height: 280px;
 }
 
@@ -46,19 +43,15 @@ h1{
 .landingHeader {
     height:10%;
     min-height: 85px;
-    /*width:100%;*/
-    /*font-size: 2rem;*/
     text-align:center;
     text-shadow: 3px 3px 0px #010c10;
 }
 
 .landingBody {
     height:90%;
-    /*width:100%;*/
 }
 
 .landingPlayer {
-    /* height: 90%; */
     background-color: rgba(22,22,22,0.5);
     border-radius: 10px;
     margin: 0 auto;
@@ -73,15 +66,11 @@ h1{
 
 .nameContainer{
     width: 100%;
-    /*margin: 1% auto;*/
     font-size: 0;
-    /* height: 15%; */
 }
 .playerContainer1, .playerContainer2 {
-    /*width: 47%;*/
     height: 20%;
     display: inline-block;
-    /* margin-bottom: 5%;   */
     margin-bottom: 0.5%;  
 }
 
@@ -129,10 +118,8 @@ h1{
 }
 .playerName1, .playerName2 {
     font-size: 1.1rem;
-    /*margin-left: 25%;*/
     border: outset 3px white;
     border-radius: 10px;
-    /*width: 50%;*/
     color: white;
     display: inline-block;
     background-color: rgba(75, 189, 271, .3);
@@ -140,13 +127,10 @@ h1{
 
 .playerName1, .playerName2 {
     width: 50%;
-    /*margin-left: 25%;*/
 }
 
 .playerName2 {
     width: 50%;
-    /* margin-right: 1%;
-    margin-left: 15%; */
 }
 
 #playerName2{
@@ -205,8 +189,6 @@ h1{
 }
 
 div.playTo > p {
-    /* padding-left:  15%;
-    padding-right: 2%; */
     display:inline-block;
     font-size: 1.5rem;
 }
@@ -235,15 +217,9 @@ div.playTo > p {
     cursor: pointer;
 }
 
-/* .tokens div:hover {
-    -webkit-box-shadow: 0px 0px 100px rgba(5,173,30,0.9);
-    -moz-box-shadow: 0px 0px 100px rgba(5,173,30,0.9);
-    box-shadow: 0px 0px 50px rgba(5,173,30,0.9);
-} */
 .token1:hover, .token2:hover, .token3:hover, .token4:hover{
     height: 50%;
     width: 50%;
-    /* box-shadow: 4px 2px 4px rgb(0,0,0); */
     z-index: 1;
 }
 
@@ -295,7 +271,6 @@ div.playTo > p {
 }
 
 .header{
-    /* width:80%; */
     margin-left:20%;
     text-align:center;
 }
@@ -345,7 +320,6 @@ button.disabled{
     min-width: 30%;
 }
 .resetBtn, .homeBtn {
-    /* height: 10%; */
     width:100%;
     padding: 1%;
     color: #eaefee;
@@ -353,8 +327,7 @@ button.disabled{
     background: rgba(75, 189, 271, .3);
     font-size: 1rem;
     display: inline-block;
-    /* position: absolute;
-    bottom: 30%; */
+    
     left: 2%;
     text-shadow: 2px 1px 0px #010c10;
 }
