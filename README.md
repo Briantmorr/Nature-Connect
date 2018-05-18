@@ -30,7 +30,8 @@ View this project live [HERE](http://natureconnect.briantmorris.com/)
 - [JavaScript](https://www.javascript.com/)
 - [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
 - [CSS3](https://www.w3.org/Style/CSS/Overview.en.html)
-- [Jquery](https://jquery.com/)
+- [jQuery](https://jquery.com/)
+- [jQuery- UI](https://jqueryui.com/)
 
 ## Contributors
 
